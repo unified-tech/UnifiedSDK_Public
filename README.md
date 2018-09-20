@@ -4,7 +4,7 @@
 
 - iOS 10+.
 
-- `UnifiedSDK` uses several core iOS frameworks which require specific privacy usage descriptions to be included in the host applications info.plist. If these are not included the application terminate.
+- `UnifiedSDK` uses several core iOS frameworks which require specific privacy usage descriptions to be included in the host applications info.plist. If these are not included the application will terminate.
 	- NSLocationAlwaysAndWhenInUseUsageDescription
 	- NSLocationAlwaysUsageDescription
 	- NSLocationWhenInUseUsageDescription
@@ -17,7 +17,20 @@
 
 ## Installation
 ### From CocoaPods
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like `UnifiedSDK` in your projects. First, add the following line to your [Podfile](http://guides.cocoapods.org/using/using-cocoapods.html):
+
+```ruby
+pod 'UnifiedSDK'
+```
+
+Second, install `UnifiedSDK` into your project:
+
+```ruby
+pod install
+```
+
 ### Manually
+To install the framework manually, please download the [latest version](https://github.com/unified-tech/UnifiedSDK_Public/releases) and add the framework to your project. Make sure that the framework is added to the 'Embedded Binaries' and 'Linked Frameworks and Libraries' section of your project.
 
 ## Usage
 ### Initialization
@@ -83,5 +96,5 @@ It is possible to stop calculating a users location via `-stopUnified`. This wou
 ```
 
 ## License
+`UnifiedSDK` for iOS is offered under Unified's END USER LICENSE AGREEMENT. You can obtain the license [here](http://unifiedapp.com/unified-sdk-eula/).
 
-## Credits
